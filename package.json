@@ -5,7 +5,8 @@
   "main": "main.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tstl"
+    "build": "tstl",
+    "gist": "yarn build && gh gist edit bd833e111508f54af5560d3974ec8e63 main.lua && echo wget run https://gist.githubusercontent.com/Promises/bd833e111508f54af5560d3974ec8e63/raw/main.lua?t=$(date +%H%M%S) | pbcopy"
   },
   "devDependencies": {
     "typescript": "^4.8.0",

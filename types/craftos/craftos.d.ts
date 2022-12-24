@@ -492,7 +492,7 @@ declare class FluidStoragePeripheral implements IPeripheral {
 
 declare type ItemDetail = {
     name: string;
-    count: string;
+    count: number;
     nbt?: string;
     displayName: string;
     maxCount: number;
